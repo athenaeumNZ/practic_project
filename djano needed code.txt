@@ -1,0 +1,78 @@
+python3 -m venv .venv
+source .venv/bin/activate
+git clone https://github.com/athenaeumNZ/practic_project.git
+python3 -m pip install --upgrade pip
+python3 -m pip install -r requirements.txt
+python3 -m pip install django-admin
+python3 -m pip install django-db
+python3 manage.py createsuperuser
+
+python3 manage.py runserver
+
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+
+
+pkill -f runserver
+
+python3 -m pip freeze > requirements.txt
+
+
+source .venv/bin/activate
+python manage.py createsuperuser
+python populate.py
+
+python -m pip install python-barcode
+pip uninstall
+python manage.py startapp
+pip freeze > requirements.txt
+
+django-admin-sortable2
+
+# Set Working directory
+
+______________
+# Setting up a file
+python -m pip install --upgrade pip
+python -m pip install django-admin
+python -m pip install django-multiselectfield
+python -m pip install Pillow
+django-admin version
+python manage.py createsuperuser
+______________
+# Start Project
+django-admin startproject telusko . h
+______________
+# Migration
+python manage.py makemigrations
+python manage.py migrate
+______________
+# Running the server
+python manage.py runserver
+______________
+# Making an app
+python manage.py startapp payment
+______________
+# change password
+python manage.py changepassword tonic
+______________
+# populate from xls
+python populate.py
+______________
+# Remove data from models
+pip install django-truncate
+add -> 'django_truncate' || to INSTALLED_APPS in settings.py
+python manage.py truncate --apps vinylshop --models vinyl_release
+______________
+# Drop table from db
+python manage.py dbshell
+sqlite> DROP TABLE tablename;
+
+_______________
+
+apple K for clear terminal
+
+_______________
+# packages
+django-admin-sortable2
